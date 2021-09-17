@@ -43,9 +43,9 @@ Electron consists of three main pillars:
 * Custom APIs for working with often-needed OS native functions.
 Developing an application with Electron is like building a Node.js app with a web interface or building web pages with seamless Node.js integration.
 
-
-[[File:Node+chromium=electron.jpg|600px|alt=ElectronJs|center]]
-
+<p align="center">
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/node-chromium.jpg" width="600" align="center" alt="app-arch"/>
+</p>
 
 ### Performing Culture
 The Electron app may be categorized into two main processes, namely, the Main and Renderer process.
@@ -68,7 +68,9 @@ A renderer process is simply a new browser window inside your application. There
 Electron is still very similar to Chromium. In Chromium, each tab is a renderer process while the overall window is the main process.
 In Electron we have the main process which you don’t really see, and each window we create is a renderer process.
 
-[[File:Main-renderer.png|alt=Alt main-renderer browser example|Caption main-renderer browser example|center]]
+<p align="center">
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/main-renderer.png" align="center" alt="Renderer" />
+</p>
 
 ### Most popular Electron apps
 1. <b>Visual Studio code:</b> This is a popular open-source IDE developed by Microsoft.
@@ -104,7 +106,9 @@ Create a folder for your project and install Electron there:
      
 ##### Create the main script
 The main script specifies the entry point of your Electron application (in our case, the main.js file) that will run the Main process. Your *main.js* script should look as shown below.
-[[File:Wiki-electron-main.PNG|center]]
+<p align="center">
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/wiki-electron-main.PNG" align="center"/>
+</p>
 
 What is going on above?
 
@@ -123,7 +127,9 @@ What is going on above?
 ##### Create web page
 This is the web page you want to display once the application is initialized. This web page represents the Renderer process. You can add any HTML sample template. Your *index.html* should look as shown below. (This HTML content entirely depends on your choice, shown in the image is for your reference)
 
-[[File:Wiki-electron-index.PNG]]
+<p align="center">
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/wiki-electron-index.PNG" align="center"/>
+</p>
 
 ##### Creating preload script
 Your preload script (in our case, the preload.js file) acts as a bridge between Node.js and your web page. It allows you to expose specific APIs and behaviors to your web page rather than insecurely exposing the entire Node.js API. In this example, we will use the preload script to read version information from the process object and update the web page with that info.
@@ -138,6 +144,7 @@ Your preload script (in our case, the preload.js file) acts as a bridge between 
       replaceText(`${type}-version`, process.versions[type]);
      }});
      
+     
 ##### What's going on above?
 
 1. <b>On line 1:</b> First you define an event listener that tells you when the web page has loaded
@@ -147,7 +154,11 @@ Your preload script (in our case, the preload.js file) acts as a bridge between 
 3. <b>On line 7:</b> Next you loop through the list of components whose version you want to display
 
 4. <b>On line 8:</b> Finally, you call replaceText to look up the version placeholders in index.html and set their text value to the values from process.versions
-   
+
+<p align="center">
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/wiki-electron-preload.PNG" align="center"/>
+</p>
+
 ##### Modify your package.json
 Your Electron application uses the package.json file as the main entry point (as any other Node.js application). The main script of your application is main.js, so modify the package.json file accordingly:
 
@@ -167,7 +178,9 @@ Your Electron application uses the package.json file as the main entry point (as
 
 Finally, your folder structure looks like this:
 
-[[File:Folder-structure.PNG|center]]
+<p align="center">
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/folder-structure.PNG" align="center"/>
+</p>
 
 Run the application using the command:<br/>
       `npm start`
@@ -175,7 +188,11 @@ Run the application using the command:<br/>
 If you have followed all the instructions properly, you can be able to see the electron application window will be launched on your screen, as shown in the below screenshot. 
 The application launched in the center is your first electron application.
 
-[[File:Final-output.PNG|center|800px]]
+<p align="center">
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/Final-output.PNG" width="800"/>
+</p>
+
+Hurray!! You have successfully built your first Electron app. Lets get to know about few benefits and drawbacks about ElectronJs.
 
 ### Benefits of using ElectronJs to build desktop applications
 * Work on all platforms, including Linux
@@ -191,3 +208,4 @@ The application launched in the center is your first electron application.
 * Large download sizes
 * High memory usage
  
+Never stop learning, because life never stops teaching...!!
