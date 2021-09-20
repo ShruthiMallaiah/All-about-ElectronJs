@@ -44,7 +44,7 @@ Electron consists of three main pillars:
 Developing an application with Electron is like building a Node.js app with a web interface or building web pages with seamless Node.js integration.
 
 <p align="center">
-     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/node-chromium.jpg" width="600" align="center" alt="app-arch"/>
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/ElectronJS%20and%20Why%20Should%20You%20Use%20It/Images/node-chromium.jpg" width="600" align="center" alt="app-arch"/>
 </p>
 
 ### Performing Culture
@@ -69,7 +69,7 @@ Electron is still very similar to Chromium. In Chromium, each tab is a renderer 
 In Electron we have the main process which you don’t really see, and each window we create is a renderer process.
 
 <p align="center">
-     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/main-renderer.png" align="center" alt="Renderer" />
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/ElectronJS%20and%20Why%20Should%20You%20Use%20It/Images/main-renderer.png" align="center" alt="Renderer" />
 </p>
 
 ### Most popular Electron apps
@@ -107,7 +107,7 @@ Create a folder for your project and install Electron there:
 ##### Create the main script
 The main script specifies the entry point of your Electron application (in our case, the main.js file) that will run the Main process. Your *main.js* script should look as shown below.
 <p align="center">
-     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/wiki-electron-main.PNG" align="center"/>
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/ElectronJS%20and%20Why%20Should%20You%20Use%20It/Images/wiki-electron-main.PNG" align="center"/>
 </p>
 
 What is going on above?
@@ -128,7 +128,7 @@ What is going on above?
 This is the web page you want to display once the application is initialized. This web page represents the Renderer process. You can add any HTML sample template. Your *index.html* should look as shown below. (This HTML content entirely depends on your choice, shown in the image is for your reference)
 
 <p align="center">
-     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/wiki-electron-index.PNG" align="center"/>
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/ElectronJS%20and%20Why%20Should%20You%20Use%20It/Images/wiki-electron-index.PNG" align="center"/>
 </p>
 
 ##### Creating preload script
@@ -156,7 +156,7 @@ Your preload script (in our case, the preload.js file) acts as a bridge between 
 4. <b>On line 8:</b> Finally, you call replaceText to look up the version placeholders in index.html and set their text value to the values from process.versions
 
 <p align="center">
-     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/wiki-electron-preload.PNG" align="center"/>
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/ElectronJS%20and%20Why%20Should%20You%20Use%20It/Images/wiki-electron-preload.PNG" align="center"/>
 </p>
 
 ##### Modify your package.json
@@ -179,7 +179,7 @@ Your Electron application uses the package.json file as the main entry point (as
 Finally, your folder structure looks like this:
 
 <p align="center">
-     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/folder-structure.PNG" align="center"/>
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/ElectronJS%20and%20Why%20Should%20You%20Use%20It/Images/folder-structure.PNG" align="center"/>
 </p>
 
 Run the application using the command:<br/>
@@ -189,7 +189,7 @@ If you have followed all the instructions properly, you can be able to see the e
 The application launched in the center is your first electron application.
 
 <p align="center">
-     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/images/Final-output.PNG" width="800"/>
+     <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/ElectronJS%20and%20Why%20Should%20You%20Use%20It/Images/Final-output.PNG" width="800"/>
 </p>
 
 Hurray!! You have successfully built your first Electron app. Lets get to know about few benefits and drawbacks about ElectronJs.
