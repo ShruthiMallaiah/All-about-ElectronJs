@@ -105,7 +105,7 @@ Create a folder for your project and install Electron there:
      npm i --save-dev electron
      
 ##### Create the main script
-The main script specifies the entry point of your Electron application (in our case, the main.js file) that will run the Main process. Your *main.js* script should look as shown below.
+The main script specifies the entry point of your Electron application (in our case, the main.js file) that will run the Main process. Create a file named *main.js* in the folder and add the lines as shown in the image below.
 <p align="center">
      <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/ElectronJS%20and%20Why%20Should%20You%20Use%20It/Images/wiki-electron-main.PNG" align="center"/>
 </p>
@@ -125,7 +125,7 @@ What is going on above?
 <b>Line 26:</b> You add a new listener that tries to quit the application when it no longer has any open windows. This listener is a no-op on macOS due to the operating system's window management behavior.
 
 ##### Create web page
-This is the web page you want to display once the application is initialized. This web page represents the Renderer process. You can add any HTML sample template. Your *index.html* should look as shown below. (This HTML content entirely depends on your choice, shown in the image is for your reference)
+This is the web page you want to display once the application is initialized. This web page represents the Renderer process. You can add any HTML sample template. Create a sample index.html page in the folder and add the sample content shown below.
 
 <p align="center">
      <img src="https://github.com/ShruthiMallaiah/All-about-ElectronJs/blob/main/ElectronJS%20and%20Why%20Should%20You%20Use%20It/Images/wiki-electron-index.PNG" align="center"/>
@@ -133,6 +133,7 @@ This is the web page you want to display once the application is initialized. Th
 
 ##### Creating preload script
 Your preload script (in our case, the preload.js file) acts as a bridge between Node.js and your web page. It allows you to expose specific APIs and behaviors to your web page rather than insecurely exposing the entire Node.js API. In this example, we will use the preload script to read version information from the process object and update the web page with that info.
+Create a new file in the folder *preload.js* .
 
 
     window.addEventListener("DOMContentLoaded", () => {
